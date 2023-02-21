@@ -3,8 +3,9 @@
 /**
  * jack_bauer - Entry point
  * Description: prints every minute in one day
- * Return: void 
+ * Return: void
  */
+
 void jack_bauer(void)
 {
 	int H, M;

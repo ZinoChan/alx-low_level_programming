@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_abs - Entry point 
+ *_abs - Entry point
  * @r: int input
  * Description: return absolute value of a number
  * Return: Absolut value of number r
