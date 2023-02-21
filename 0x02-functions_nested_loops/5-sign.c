@@ -9,18 +9,20 @@
 
 int print_sign(int n)
 {
-	switch (n)
+	if (n > 0)
 	{
-		case n == 0:
-			_putchar(48);
-			return (1);
-		case n > 0:
-			_putchar(43);
-			return (1);
-		default:
-			_putchar(45);
-			return (-1);
-
+		_putchar(43);
+		return (1);
+	}
+	else if (n < 0)
+	{
+		_putchar(45);
+		return (-1);
+	}
+	else
+	{
+		_putchar(48);
+		return (0);
 	}
 	_putchar('\n');
 }
