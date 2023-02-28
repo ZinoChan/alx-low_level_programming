@@ -11,8 +11,7 @@
 | [`0x02. C - Functions, nested loops `](https://github.com/ZinoChan/alx-low_level_programming/tree/master/0x02-functions_nested_loops) | nested loops,  functions, prototype, Scope of variables...|
 | [`0x03-debugging`](https://github.com/ZinoChan/alx-low_level_programming/tree/master/0x03-debugging) | debugging C code |
 | [`0x04-more_functions_nested_loops`](https://github.com/ZinoChan/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops) | nested loops,  functions, prototype, Scope of variables... |
-|[0x05. C - Pointers, arrays and strings](./0x05-pointers_arrays_strings)
- | pointers, arrays, strings, Scope of variables |
+|[0x05. C - Pointers, arrays and strings](./0x05-pointers_arrays_strings) | pointers, arrays, strings, Scope of variables |
 
 
 
