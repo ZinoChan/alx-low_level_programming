@@ -1,4 +1,4 @@
-# Debugging
+# Debugging :bug:
 
 ## Files
 
