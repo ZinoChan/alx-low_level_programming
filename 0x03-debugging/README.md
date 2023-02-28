@@ -1,6 +1,6 @@
 # Debugging :bug:
 
-## Files
+## Files :file_folder:
 
 | Filename | Description |
 | -------- | ----------- |
