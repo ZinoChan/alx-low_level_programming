@@ -1,7 +1,7 @@
 # Low-level programming & Algorithm :robot:
 
 
-## Projects
+## Projects :relaxed: + :computer: + :hourglass_flowing_sand: = :trophy:
 
 
 | Project name | Description |
