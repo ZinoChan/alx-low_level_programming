@@ -1,10 +1,10 @@
 ### Logical operators
 
-1- `&&` (logical AND): returns true if both operands are true, and false otherwise.
+1. `&&` (logical AND): returns true if both operands are true, and false otherwise.
 
-2- `||` (logical OR): returns true if at least one operand is true, and false otherwise.
+2. `||` (logical OR): returns true if at least one operand is true, and false otherwise.
 
-3- `!` (logical NOT): returns the opposite of the operand's truth value. If the operand is true, it returns false, and if the operand is false, it returns true.
+3. `!` (logical NOT): returns the opposite of the operand's truth value. If the operand is true, it returns false, and if the operand is false, it returns true.
 
 ### Relational operators
 
