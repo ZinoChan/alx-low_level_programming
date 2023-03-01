@@ -1,6 +1,6 @@
 # C - Functions, nested loops
 
-## Helper File :raised_hands:
+## Helper File :pushpin:
 
 * [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
 
