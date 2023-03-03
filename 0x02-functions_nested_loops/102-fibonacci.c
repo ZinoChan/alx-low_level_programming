@@ -8,19 +8,21 @@
 int main(void)
 {
 	int i;
-	long int fibonacci[50];
+	long int t1, t2, f;
 
-	fibonacci[0] = 1;
-	fibonacci[1] = 2;
-	printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
+	t1 = 1;
+	t2 = 2;
+	printf("%ld, %ld, ",  t1, t2);
 
 	for (i = 2; i < 50; i++)
 	{
-		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
-		if (i == 49)
-			printf("%ld\n", fibonacci[i]);
+		f = t2 + t1;
+		if (i < 49)
+			printf("%ld, ", f);
 		else
-			printf("%ld, ", fibonacci[i]);
+			printf("%ld\n", f);
+		t1 = t2;
+		t2 = f;
 	}
 	return (0);
 }
