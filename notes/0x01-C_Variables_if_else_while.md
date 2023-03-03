@@ -56,6 +56,30 @@ int main(void)
 
 ```
 
+#### Converting double digit to ASCII
+
+```
+   int num = 43;
+   char ascii1 = num / 10 + '0';
+   char ascii2 = num % 10 + '0';
+```
+
+- When you divide two integers in C using the `/` operator, the result is always an integer, even if the division would normally result in a non-integer value. In this case, `43 / 10` would normally result in `4.3`, but since both operands are integers, the result is truncated to an integer value of `4`.
+
+  > 4 + '0' is the ASCII fo 4
+
+- a number % 10 will always give the last digit of the number
+  > 43 % 10 = 3 and 3 + '0' is the ASCII for 3
+
+> Example of transforming a 3 digit number:
+
+```
+   int num = 422;
+   char ascii1 = (num / 100) + '0';
+   char ascii2 = ((num / 10) % 10) + '0';
+   char ascii3 = (num % 10) + '0';
+```
+
 ### GCC flags -m32 and -m64
 
 The -m32 flag tells the compiler to generate code for a 32-bit architecture, while the -m64 flag tells the compiler to generate code for a 64-bit architecture.
