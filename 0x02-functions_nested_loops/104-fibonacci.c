@@ -20,7 +20,7 @@ int main(void)
 
 	for (i = 2; i < 98; i++)
 	{
-		if(fib1 + fib2 > 10000000000 || x > 0 || y > 0)
+		if (fib1 + fib2 > 10000000000 || x > 0 || y > 0)
 		{
 			carry1 = (fib1 + fib2) / 10000000000;
 			fib = (fib1 + fib2) % 10000000000;
@@ -38,9 +38,9 @@ int main(void)
 			fib2 = fib;
 			printf("%lu", fib2);
 		}
-		if(i != 97)
+		if (i != 97)
 			printf(", ");
 	}
 	printf("\n");
-	return(0);
+	return (0);
 }
