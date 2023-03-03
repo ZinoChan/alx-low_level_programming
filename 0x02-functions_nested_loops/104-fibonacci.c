@@ -39,7 +39,7 @@ int main(void)
 			printf("%lu", fib2);
 		}
 		if(i != 97)
-			printf(" ,");
+			printf(", ");
 	}
 	printf("\n");
 	return(0);
