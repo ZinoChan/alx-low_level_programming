@@ -4,7 +4,7 @@
 
 * [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
 
-## Testing Files
+## Test Files :test_tube:
 * [mains](./mains): Contains main functions that are used to test the some of the functions
 #### usage:
 ```
