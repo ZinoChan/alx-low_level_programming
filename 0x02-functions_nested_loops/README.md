@@ -6,7 +6,7 @@
 
 ## Testing Files
 * [mains](./mains): Contains main files that are used to test the functions
-- usage:
+#### usage:
 ```
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 [if_putchar_is_used: _putchar.c] mains/[number_of_the_tested_function]-main.c [function_to_test] -o [output_file_name]
 ```
