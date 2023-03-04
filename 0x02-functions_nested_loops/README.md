@@ -4,6 +4,19 @@
 
 * [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
 
+## Testing Files :test:
+* [mains](./mains): Contains main files that are used to test the functions
+- usage:
+```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 [if_putchar_is_used: _putchar.c] mains/[number_of_the_tested_function]-main.c [function_to_test] -o [output_file_name]
+```
+- for example say that I need to test the 1-alphabet.c and it uses the putchar function so the command to use is this:
+
+```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/1-main.c 1-alphabet.c -o 1-alphabet
+```
+
+
 ## Header File :file_folder:
 
 * [main.h](./main.h): Header file containing prototypes for all
