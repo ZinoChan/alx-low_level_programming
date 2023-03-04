@@ -43,3 +43,27 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/6-main.c 6-abs.c
 ```
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/7-main.c 7-print_last_digit.c -o 7-last_digit
 ```
+
+- 8-24_hours.c
+
+```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/9-main.c 9-times_table.c -o 9-times_table
+```
+
+- 10-add.c
+
+```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/10-main.c 10-add.c -o 10-add
+```
+
+- 11-print_to_98.c
+
+```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/11-main.c 11-print_to_98.c -o 11-98
+```
+
+- 100-times_table.c
+
+```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/100-main.c 100-times_table.c -o 100-times_table
+```
