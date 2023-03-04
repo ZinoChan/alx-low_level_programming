@@ -25,3 +25,21 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/2-main.c 2-print
 ```
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/4-main.c 4-isalpha.c -o 4-isalpha
 ```
+
+- 5-sign.c
+
+```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/5-main.c 5-sign.c -o 5-sign
+```
+
+- 6-abs.c
+
+```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/6-main.c 6-abs.c -o 6-abs
+```
+
+- 7-print_last_digit.c
+
+```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c mains/7-main.c 7-print_last_digit.c -o 7-last_digit
+```
