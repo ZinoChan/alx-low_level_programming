@@ -9,11 +9,16 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, c;
+	int i = 0, op = 0;
 
-	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
+	while (op == 0)
 	{
-		c = (*s1 + 0) - (*s2 + 0);
+		if ((*(s1 + i) == '\0') && (*(s2 + i) == '\0'))
+			break;
+		op = *(s1 + i) - *(s2 + i);
+		i++;
 	}
-	return (c);
+
+	return (op);
 }
+
