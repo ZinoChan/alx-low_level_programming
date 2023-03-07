@@ -1,5 +1,22 @@
 # C - Even more pointers, arrays and strings
 
+## Helper File :paperclip:
+
+* [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
+
+## Tests :test_tube:
+* [mains](./mains): test functions provided by the ALX program.
+* [tests](./tests): bash scripts to run the tests.
+
+### usage:
+to test a file run `./tests/[file_number]-test
+
+#### Example:
+to test the 0-memeset.c run:
+```
+./tests/0-test
+```
+
 ## Header File :file_folder:
 
 - [main.h](./main.h): Header file containing prototypes for all functions written
