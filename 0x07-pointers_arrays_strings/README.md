@@ -33,6 +33,7 @@ to test the `0-memset.c` run:
 | `7-print_chessboard.c` | `void print_chessboard(char (*a)[8]);`                  |
 | `8-print_diagsums.c`   | `void print_diagsums(int *a, int size);`                |
 | `100-set_string.c`     | `void set_string(char **s, char *to);`                  |
+| `_putchar`             | `int _putchar(char);`                                   |
 
 ## Tasks :page_with_curl:
 
