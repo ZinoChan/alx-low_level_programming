@@ -12,7 +12,7 @@
 to test a file run `./tests/[file_number]-test`
 
 #### Example:
-to test the 0-memeset.c run:
+to test the `0-memset.c` run:
 ```
 ./tests/0-test
 ```
