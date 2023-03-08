@@ -37,3 +37,8 @@ int main() {
   in C a string is an array of characters, where the last character is always a null character. For example, the string "hello" is represented in memory as the sequence of characters 'h', 'e', 'l', 'l', 'o', and '\0'.
 
 so the pointer to a stirng stores the address of the first character in the string.
+
+### \*(s + i)
+
+In C, the expression `*(s + i)` is known as the "dereference operator" and it is used to access the value stored at the memory location pointed to by the pointer `s` plus the offset `i`. This is the same as accessing the value of the element at index `i` of the string/array `s`.
+it's the same as `s[i]`.
