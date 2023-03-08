@@ -6,12 +6,12 @@
  */
 int prime_helper(int n, int i)
 {
-        if (i * i > n)
-                return (0);
-        else if (n % i == 0)
-                return (1);
-        else
-                return (prime_helper(n, i + 2));
+	if (i * i > n)
+		return (0);
+	else if (n % i == 0)
+		return (1);
+	else
+		return (prime_helper(n, i + 2));
 }
 
 /**
