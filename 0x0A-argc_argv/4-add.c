@@ -12,13 +12,15 @@
 
 int main(int argc, char *argv[])
 {
-    if (argc == 1)
-    {
-        printf("0\n");
-        return (0);
-    }
-    
-	int i, j, sum = 0;
+
+	int i, j, sum;
+
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
+	}
+	sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{
