@@ -4,12 +4,12 @@
 
 * [functions implementation](./functions): all functions listed in [main.h](./main.h).
 
-### Header file
+### Header file :file_folder:
 
 * [main.h](./main.h): Header file containing the prototypes of all functions
   included in `libmy.a`.
 
-### Tests
+### Tests :test_tube:
 to test the created library run : 
 
 ```
