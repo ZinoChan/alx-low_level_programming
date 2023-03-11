@@ -8,3 +8,6 @@ this directory contains notes about C programming language I made will studying 
 - [`Variables_if_else_while`](./0x01-C_Variables_if_else_while.md)
 - [`functions_nested_loops`](./0x02-functions_nested_loops.md)
 - [`pointers_arrays`](./0x05-pointers_arrays_strings.md)
+- [`pointers_arrays`](./0x05-pointers_arrays_strings.md)
+- [`static_libraries`](./0x09-static_libraries.md)
+- [`argc_argv`](./0x0A-argc_argv.md)
