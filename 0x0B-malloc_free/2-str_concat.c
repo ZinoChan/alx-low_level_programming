@@ -32,9 +32,9 @@ char *str_concat(char *s1, char *s2)
 	if (str == NULL)
 		return (NULL);
 
-	for(i = 0; i < len1; i++)
+	for (i = 0; i < len1; i++)
 		str[i] = s1[i];
-	for(j = 0; j < len2; j++, i++)
+	for (j = 0; j < len2; j++, i++)
 		str[i] = s2[j];
 
 	str[i] = '\0';
