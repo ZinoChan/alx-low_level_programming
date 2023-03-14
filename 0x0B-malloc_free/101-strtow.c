@@ -1,46 +1,41 @@
 #include "main.h"
+
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * word_count - function to calculate number of words
+ * number - function to calculate number of words
  * @str: string being passed to check for words
  *
  * Return: number of words
  */
-
-int word_count(char *str)
+int number(char *str)
 {
-	int count;
-	int in_word;
+	int a, num = 0;
 
-	count = 0;
-	in_word = 0;
-	while (*str != '\0')
+	for (a = 0; str[a] != '\0'; a++)
 	{
 		if (*str == ' ')
-			in_word = 0;
-		else if (in_word == 0)
+			str++;
+		else
 		{
-			count++;
-			in_word = 1;
+			for (; str[a] != ' ' && str[a] != '\0'; a++)
+				str++;
+			num++;
 		}
-		str++;
 	}
-	return (count);
+	return (num);
 }
-
 /**
- * free_memo - frees the memory
- * @s: pointer values being passed for freeing
+ * free_everything - frees the memory
+ * @string: pointer values being passed for freeing
  * @i: counter
  */
-
-void free_memo(char **s, int i)
+void free_everything(char **string, int i)
 {
-	int j;
-	for (j = 0; j < i; j++)
-		free(s[j]);
-	free(s);
+	for (; i > 0;)
+		free(string[--i]);
+	free(string);
 }
 
 /**
@@ -48,52 +43,46 @@ void free_memo(char **s, int i)
  * @str: string being passed
  * Return: null if string is empty or null or function fails
  */
-
 char **strtow(char *str)
 {
-	int j, c, word_len, words;
-	char **arr;
-	char *word_start;
+	int total_words = 0, b = 0, c = 0, length = 0;
+	char **words, *found_word;
 
-	if (str == NULL || *str == ' ')
+	if (str == 0 || *str == 0)
 		return (NULL);
-	words = word_count(str);
-
+	total_words = number(str);
+	if (total_words == 0)
+		return (NULL);
+	words = malloc((total_words + 1) * sizeof(char *));
 	if (words == 0)
 		return (NULL);
-
-	arr = malloc((words + 1) * sizeof(char *));
-
-	if (arr == NULL)
-		return (NULL);
-
-	for (j = 0; str[j] != '\0'; j++)
+	for (; *str != '\0' &&  b < total_words;)
 	{
-		word_len = 0;
 		if (*str == ' ')
 			str++;
 		else
 		{
-			word_start = str;
-			while(*str != ' ' && *str != '\0')
+			found_word = str;
+			for (; *str != ' ' && *str != '\0';)
 			{
-				word_len++;
+				length++;
 				str++;
 			}
-
-			arr[j] = malloc((word_len + 1) * sizeof(char));
-
-			if (arr[j] == NULL)
+			words[b] = malloc((length + 1) * sizeof(char));
+			if (words[b] == 0)
 			{
-				free_memo(arr, j);
+				free_everything(words, b);
 				return (NULL);
 			}
-			for (c = 0; word_start[c] != ' ' && word_start[c] != '\0'; c++)
-				arr[j][c] = word_start[c];
-			arr[j][c] = '\0';
+			while (*found_word != ' ' && *found_word != '\0')
+			{
+				words[b][c] = *found_word;
+				found_word++;
+				c++;
+			}
+			words[b][c] = '\0';
+			b++; c = 0; length = 0; str++;
 		}
 	}
-	arr[j] = NULL;
-	return (arr);
+	return (words);
 }
-
