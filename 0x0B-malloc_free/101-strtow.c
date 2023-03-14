@@ -13,6 +13,8 @@ int number(char *str)
 {
 	int a, num = 0;
 
+	if (str == 0 || *str == 0)
+		return (0);
 	for (a = 0; str[a] != '\0'; a++)
 	{
 		if (*str == ' ')
@@ -38,6 +40,7 @@ void free_everything(char **string, int i)
 	free(string);
 }
 
+
 /**
  * strtow - function that splits string into words
  * @str: string being passed
@@ -48,8 +51,6 @@ char **strtow(char *str)
 	int total_words = 0, b = 0, c = 0, length = 0;
 	char **words, *found_word;
 
-	if (str == 0 || *str == 0)
-		return (NULL);
 	total_words = number(str);
 	if (total_words == 0)
 		return (NULL);
@@ -63,11 +64,8 @@ char **strtow(char *str)
 		else
 		{
 			found_word = str;
-			for (; *str != ' ' && *str != '\0';)
-			{
-				length++;
-				str++;
-			}
+			for (; *str != ' ' && *str != '\0'; str++, length++)
+				;
 			words[b] = malloc((length + 1) * sizeof(char));
 			if (words[b] == 0)
 			{
@@ -81,7 +79,10 @@ char **strtow(char *str)
 				c++;
 			}
 			words[b][c] = '\0';
-			b++; c = 0; length = 0; str++;
+			b++;
+			c = 0;
+			length = 0;
+			str++;
 		}
 	}
 	return (words);
