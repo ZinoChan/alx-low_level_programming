@@ -4,8 +4,6 @@
 
 int is_num(char *str);
 void multiply(char *num1, char *num2);
-char *rm_zeroes(char *str);
-int str_len(char *str);
 /**
  * str_len - Finds the length of a string.
  * @str: The string to be measured.
@@ -21,20 +19,6 @@ int str_len(char *str)
 		;
 	return len;
 } 
-
-/**
- * rm_zeroes -  remove leading zeroes.
- * @str: The string of numbers to be iterate through.
- * Return: A pointer to the next non-zero element.
- */
-
-char *rm_zeroes(char *str)
-{
-	while (*str && *str == '0')
-		str++;
-
-	return (str);
-}
 
 
 /**
