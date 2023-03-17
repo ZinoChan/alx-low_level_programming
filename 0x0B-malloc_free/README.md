@@ -3,6 +3,24 @@
 In this project, I learned about the difference between automatic
 and dynamic location as well as how to use `malloc`, `free`, and `valgrind` in C.
 
+## Tests :test_tube:
+
+- [mains](./mains): test functions provided by the ALX program.
+
+- [tests](./tests): bash scripts to run the tests.
+
+### usage
+
+to test a file run `./tests/[file_number]-test`
+
+#### Example:
+
+to test the `0-create_array.c` run:
+
+```
+./tests/0-test
+```
+
 ## Header File :file_folder:
 
 * [main.h](./main.h): Header file containing prototypes for all functions written
