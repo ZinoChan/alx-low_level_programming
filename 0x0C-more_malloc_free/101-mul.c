@@ -14,11 +14,11 @@ void multiply(char *num1, char *num2);
 int str_len(char *str)
 {
 	int len;
-	 
+
 	for (len = 0; str[len] != '\0'; len++)
 		;
-	return len;
-} 
+	return (len);
+}
 
 
 /**
@@ -48,10 +48,15 @@ int main(int argc, char *argv[])
 
 }
 
+/**
+ * multiply - multiplies two numbers and displays the result
+ * @num1: first number
+ * @num2: second number
+ */
 void multiply(char *num1, char *num2)
 {
 	int len1, len2, i, j, res, *result;
-	
+
 	len1 = str_len(num1);
 	len2 = str_len(num2);
 
@@ -69,7 +74,7 @@ void multiply(char *num1, char *num2)
 
 	for (i = len1 + len2 - 1; i > 0; i--)
 	{
-		if(result[i] > 9)
+		if (result[i] > 9)
 		{
 			result[i - 1] += result[i] / 10;
 			result[i] %= 10;
@@ -80,7 +85,7 @@ void multiply(char *num1, char *num2)
 	{
 		if (result[i] != 0)
 			break;
-	}	
+	}
 
 	for (; i < len1 + len2; i++)
 		printf("%d", result[i]);
@@ -98,13 +103,13 @@ void multiply(char *num1, char *num2)
 
 int is_num(char *str)
 {
-	while(*str)
+	while (*str)
 	{
 		if (*str < '0' || *str > '9')
-			return 0;
+			return (0);
 		str++;
 	}
-	return 1;
+	return (1);
 }
 
 
