@@ -4,6 +4,17 @@
 
 * [functions implementation](./functions): all functions listed in [main.h](./main.h).
 
+## Tests :test_tube:
+
+- [mains](./mains): test functions provided by the ALX program.
+
+- [tests](./tests): bash scripts to run the tests.
+
+### usage
+
+to test a file run `./tests/[file_number]-test.sh`
+
+
 ### Header file :file_folder:
 
 * [main.h](./main.h): Header file containing the prototypes of all functions
