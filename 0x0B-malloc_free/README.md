@@ -11,14 +11,14 @@ and dynamic location as well as how to use `malloc`, `free`, and `valgrind` in C
 
 ### usage
 
-to test a file run `./tests/[file_number]-test`
+to test a file run `./tests/[file_number]-test.sh`
 
 #### Example:
 
 to test the `0-create_array.c` run:
 
 ```
-./tests/0-test
+./tests/0-test.sh
 ```
 
 ## Header File :file_folder:
