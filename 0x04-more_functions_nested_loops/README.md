@@ -8,6 +8,17 @@
 - [C - Header Files](https://www.tutorialspoint.com/cprogramming/c_header_files.htm)
 - [C Books and PDF's](../references) to check out and use as reference.
 
+## Tests :test_tube:
+
+- [mains](./mains): test functions provided by the ALX program.
+
+- [tests](./tests): bash scripts to run the tests.
+
+### usage
+
+to test a file run `./tests/[file_number]-test.sh`
+
+
 ## Header File :file_folder:
 
 - [main.h](./main.h): Header file containing prototypes for all functions written in the project.
