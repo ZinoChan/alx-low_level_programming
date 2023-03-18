@@ -11,14 +11,14 @@
 
 ### usage:
 
-to test a file run `./tests/[file_number]-test`
+to test a file run `./tests/[file_number]-test.sh`
 
 #### Example:
 
 to test the `0-memset.c` run:
 
 ```
-./tests/0-test
+./tests/0-test.sh
 ```
 
 ## Header File :file_folder:
