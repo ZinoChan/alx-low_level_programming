@@ -1,83 +1,53 @@
 #include "dog.h"
 #include <stdlib.h>
 
-int str_len(char *s);
-char *str_cpy(char *dest, char *src);
-
-/**
-  * str_len - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: String length
-  */
-int str_len(char *s)
-{
-	int len;
-
-	for (len = 0; s[len] != '\0'; len++)
-		;
-	return (len);
-}
-
-/**
-  * str_cpy - Copy a string
-  * @dest: Destination value
-  * @src: Source value
-  *
-  * Return: the pointer to dest
-  */
-char *str_cpy(char *dest, char *src)
-{
-	int i;
-
-	for (i = 0; src[i] != '\0'; i++)
-	{
-		dest[i] = src[i];
-	}
-
-	dest[i++] = '\0';
-
-	return (dest);
-}
 /**
  * new_dog - creates a new dog.
  * @name: name of the dog.
  * @age: age of the dog.
  * @owner: owner of the dog.
- * Return: struct dog || NULL.
+ *
+ * Return: struct dog.
+ * if fails, returns NULL.
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *sadaharu;
+	dog_t *p_dog;
+	int i, lname, lowner;
 
-	if (name && owner)
+	p_dog = malloc(sizeof(*p_dog));
+	if (p_dog == NULL || !(name) || !(owner))
 	{
-		sadaharu = malloc(sizeof(dog_t));
-
-		if (sadaharu == NULL)
-			return (NULL);
-
-		sadaharu->name = malloc(sizeof(char) * str_len(name));
-		if (sadaharu->name == NULL)
-		{
-			free(sadaharu);
-			return (NULL);
-		}
-
-		sadaharu->owner = malloc(sizeof(char) * str_len(owner));
-		if (sadaharu->owner == NULL)
-		{
-			free(sadaharu->name);
-			free(sadaharu);
-			return (NULL);
-		}
-
-		str_cpy(sadaharu->name, name);
-		str_cpy(sadaharu->owner, owner);
-		sadaharu->age = age;
+		free(p_dog);
+		return (NULL);
 	}
 
-	return (sadaharu);
+	for (lname = 0; name[lname]; lname++)
+		;
 
+	for (lowner = 0; owner[lowner]; lowner++)
+		;
+
+	p_dog->name = malloc(lname + 1);
+	p_dog->owner = malloc(lowner + 1);
+
+	if (!(p_dog->name) || !(p_dog->owner))
+	{
+		free(p_dog->owner);
+		free(p_dog->name);
+		free(p_dog);
+		return (NULL);
+	}
+
+	for (i = 0; i < lname; i++)
+		p_dog->name[i] = name[i];
+	p_dog->name[i] = '\0';
+
+	p_dog->age = age;
+
+	for (i = 0; i < lowner; i++)
+		p_dog->owner[i] = owner[i];
+	p_dog->owner[i] = '\0';
+
+	return (p_dog);
 }
