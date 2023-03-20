@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 
-int _str_len(char *s);
+int str_len(char *s);
 char *str_cpy(char *dest, char *src);
 
 /**
