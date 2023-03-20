@@ -1,83 +1,53 @@
 #include "dog.h"
 #include <stdlib.h>
-
-int _str_len(char *s);
-char *str_cpy(char *dest, char *src);
-
-/**
-  * str_len - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: String length
-  */
-int str_len(char *s)
-{
-	int len;
-
-	for (len = 0; s[len] != '\0'; len++)
-		;
-	return (len);
-}
-
-/**
-  * str_cpy - Copy a string
-  * @dest: Destination value
-  * @src: Source value
-  *
-  * Return: the pointer to dest
-  */
-char *str_cpy(char *dest, char *src)
-{
-	int i;
-
-	for (i = 0; src[i] != '\0'; i++)
-	{
-		dest[i] = src[i];
-	}
-
-	dest[i++] = '\0';
-
-	return (dest);
-}
 /**
  * new_dog - creates a new dog.
  * @name: name of the dog.
  * @age: age of the dog.
  * @owner: owner of the dog.
- * Return: struct dog || NULL.
+ *
+ * Return: struct dog.
+ * if fails, returns NULL.
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	int len1, len2, i;
 	dog_t *sadaharu;
 
 	if (name && owner)
 	{
 		sadaharu = malloc(sizeof(dog_t));
-
 		if (sadaharu == NULL)
 			return (NULL);
-
-		sadaharu->name = malloc(sizeof(char) * str_len(name));
+		for (len1 = 0; name[len1] != '\0'; len1++)
+			;
+		sadaharu->name = malloc(sizeof(char) * len1);
 		if (sadaharu->name == NULL)
 		{
 			free(sadaharu);
 			return (NULL);
 		}
-
-		sadaharu->owner = malloc(sizeof(char) * str_len(owner));
+		for (len2 = 0; name[len2] != '\0'; len2++)
+			;
+		sadaharu->owner = malloc(sizeof(char) * len2);
 		if (sadaharu->owner == NULL)
 		{
 			free(sadaharu->name);
 			free(sadaharu);
 			return (NULL);
 		}
-
-		str_cpy(sadaharu->name, name);
-		str_cpy(sadaharu->owner, owner);
+		for (i = 0; name[i] != '\0'; i++)
+		{
+			sadaharu->name[i] = name[i];
+		}
+		sadaharu->name[i++] = '\0';
+		for (i = 0; owner[i] != '\0'; i++)
+		{
+			sadaharu->owner[i] = owner[i];
+		}
+		sadaharu->owner[i++] = '\0';
 		sadaharu->age = age;
 	}
-
 	return (sadaharu);
-
 }
