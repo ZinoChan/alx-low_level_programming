@@ -20,7 +20,7 @@ My name is Poppy, and I am 3.5 :) - Woof!
 if gcc -Wall -pedantic -Werror -Wextra -std=gnu89 mains/5-main.c 5-free_dog.c 4-new_dog.c -o f; then
     echo -e "\n"
     echo "Your output: "
-    ./f
+    valgrind ./f
 else
     echo "Compilation failed"
 fi
