@@ -1,7 +1,19 @@
 # C - Preprocessor
 
-In this project, I learned about common predefined macros in C while
-practicing implementing my own and include-guarding header files.
+## Tests :test_tube:
+
+- [mains](./mains): test functions provided by the ALX program.
+
+- [tests](./tests): bash scripts to run the tests.
+
+### usage
+
+to test a file run `./tests/[file_number]-test.sh`
+
+### Example:
+```
+./tests/0-test.sh
+```
 
 ## Tasks :page_with_curl:
 
