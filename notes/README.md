@@ -11,3 +11,4 @@ this directory contains notes about C programming language I made will studying 
 - [`pointers_arrays`](./0x05-pointers_arrays_strings.md)
 - [`static_libraries`](./0x09-static_libraries.md)
 - [`argc_argv`](./0x0A-argc_argv.md)
+- [`malloc_free`](./0x0B-malloc_free.md)
