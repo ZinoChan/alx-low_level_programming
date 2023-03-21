@@ -1,5 +1,7 @@
 # Low-level programming & Algorithm :robot:
 
+## [`Notes`](./notes) :notebook:
+
 ## Projects :rocket:
 
 | Project name                                                                         | Description                                                                                                                                                        |
