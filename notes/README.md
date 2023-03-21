@@ -1,6 +1,6 @@
 # Alx-low_level_programming notes :notebook:
 
-this directory contains notes about C programming language I made will studying in the ALX SE program.
+this directory contains notes about C programming language I made while studying at the ALX SE program.
 
 ## Table of Contents 📜
 
