@@ -1,6 +1,6 @@
 # Low-level programming & Algorithm :robot:
 
-## [`Notes`](./notes) :notebook:
+### [Notes](./notes) :notebook:
 
 ## Projects :rocket:
 
