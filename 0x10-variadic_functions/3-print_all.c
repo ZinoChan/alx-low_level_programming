@@ -32,9 +32,9 @@ void print_all(const char * const format, ...)
 			case 's':
 				is_valid = 1;
 				s = va_arg(args, char *);
-				if (s == NULL)
+				if (!s)
 				{
-					printf("nil");
+					printf("(nil)");
 					break;
 				}
 				printf("%s", s);
@@ -45,8 +45,9 @@ void print_all(const char * const format, ...)
 		is_valid = 0;
 		idx++;
 	}
-	va_end(args);
+
 	printf("\n");
+	va_end(args);
 }
 
 
