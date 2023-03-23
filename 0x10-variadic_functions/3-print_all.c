@@ -1,3 +1,4 @@
+#include "variadic_functions.h"
 /**
   * print_all - Prints anything
   * @format: The conversion specifier to prints
