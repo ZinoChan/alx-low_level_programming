@@ -9,33 +9,25 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	char c;
-	int i;
-	double f;
+	int idx = 0, is_valid = 0;
 	char *s;
-	int idx = 0;
-	int is_valid = 0;
 
 	va_start(args, format);
-	
-	while(format[idx])
+	while (format[idx])
 	{
-		switch(format[idx])
+		switch (format[idx])
 		{
-			case 'c':	
+			case 'c':
 				is_valid = 1;
-				c = va_arg(args, int);
-				printf("%c", c);
+				printf("%c", va_arg(args, int));
 				break;
 			case 'i':
 				is_valid = 1;
-				i = va_arg(args, int);
-				printf("%i", i);
+				printf("%i", va_arg(args, int));
 				break;
 			case 'f':
 				is_valid = 1;
-				f = va_arg(args, double);
-				printf("%f", f);
+				printf("%f", va_arg(args, double));
 				break;
 			case 's':
 				is_valid = 1;
@@ -48,18 +40,13 @@ void print_all(const char * const format, ...)
 				printf("%s", s);
 				break;
 		}
-
-		if(is_valid == 1 && format[idx + 1] != '\0')
+		if (is_valid == 1 && format[idx + 1] != '\0')
 			printf(", ");
 		is_valid = 0;
 		idx++;
-		
 	}
 	va_end(args);
 	printf("\n");
-
-	
-
-	
 }
+
 
