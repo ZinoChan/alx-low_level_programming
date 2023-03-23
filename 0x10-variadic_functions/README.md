@@ -38,10 +38,20 @@ prototypes for all types and functions written in the project.
     * If one of the strings is `NULL`, the function prints `(nil)` instead.
 
 * **3. To be is a to be the value of a variable**
-  * [3-print_all.c](./3-print_all.c): C function that prints anything.
-    * Usage: `print_all("ceis", 'H', 0, "lberton");`
-    * The paramter `format` is a list of types of arguments passed to the function
-    (`c`:`char`, `i`:`int`, `f`:`float`, `s`:`char *` (if the string is
-    `NULL`, `(nil)` is printed instead))
-    * Any other character is ignored.
-    * A new line is printed at the end of the function.
+  * [3-print_all.c](./3-print_all.c): Write a function that prints anything.
+
+  *  Prototype: `void print_all(const char * const format, ...);`
+    where format is a list of types of arguments passed to the function
+    c: char
+    i: integer
+    f: float
+    s: char * (if the string is NULL, print (nil) instead
+   * any other char should be ignored
+       - example:  `print_all("ceis", 'B', 3, "stSchool");`
+   * You are not allowed to use for, goto, ternary operator, else, do ... while
+   * You can use a maximum of
+       - 2 while loops
+       - 2 if
+   * You can declare a maximum of 9 variables
+   * You are allowed to use printf
+   * Print a new line at the end of your function
