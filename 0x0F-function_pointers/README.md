@@ -61,3 +61,10 @@ types and function written for the program [3-main.c](./3-main.c).
     a new line and exits with a status value of `99`.
     * If the user tries to divide (`/` or `%`) by `0`, the program prints
     `Error` followed by a new line and exits with a status value of `100`.
+* **4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker**
+  * [100-main_opcodes.c](./100-main_opcodes.c): C program that prints the opcodes of its
+  own main function, followed by a new line.
+    * Usage: `./main number_of_bytes`
+    * Opcodes are printed two-decimal long in hexadecimal, lowercase.
+    * If the number of arguments is incorrect, the program prints `Error`
+    followed by a new line and exits with a status value of `2`.
