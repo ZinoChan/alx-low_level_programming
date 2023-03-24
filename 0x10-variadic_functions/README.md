@@ -1,7 +1,14 @@
 # C - Variadic functions
 
-In this project, I learned about using variadic functions with the `va_start`,
-`va_arg`, and `va_end` macros as well as why and how to use the `const` type qualifier in C.
+## Tests :test_tube:
+
+- [mains](./mains): test functions provided by the ALX program.
+
+- [tests](./tests): bash scripts to run the tests.
+
+### usage
+
+to test a file run `./tests/[file_number]-test.sh`
 
 ## Header File :file_folder:
 
