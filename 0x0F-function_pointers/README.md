@@ -20,3 +20,25 @@ types and function written for the program [3-main.c](./3-main.c).
 | `typedef op_t`     | `struct op`                                                  |
 | `3-op_functions.c` | <ul><li>`int op_add(int a, int b);`</li><li>`int op_sub(int a, int b);`</li><li>`int op_mul(int a, int b);`</li><li>`int op_div(int a, int b);`</li><li>`int op_mod(int a, int b);`</li></ul>                                            |
 | `3-get_op_func.c`  | `int (*get_op_func(char *s))(int, int);`                     |
+
+## Tasks :page_with_curl:
+
+* **0. What's my name**
+  * [0-print_name.c](./0-print_name.c): C function that prints a name.
+
+* **1. If you spend too much time thinking about a thing, you'll never get it done**
+  * [1-array_iterator.c](./1-array_iterator.c): C function that executes a function given
+  as a parameter on each element of an array.
+
+* **2. To hell with circumstances; I create opportunities**
+  * [2-int_index.c](./2-int_index.c): C function that searches for an integer.
+    * Returns the index of the first element for which the `cmp` function does not return `0`.
+    * If no element is matched or `size` <= 0, the function returns `-1`.
+
+* **3. A goal is not always meant to be reached, it often serves simply as something to aim at**
+  * [3-op_functions.c](./3-op_functions.c): File containing the following five functions:
+    * `op_add`: Returns the sum of `a` and `b`.
+    * `op_sub`: Returns the difference of `a` and `b`.
+    * `op_mul`: Returns the product of `a` and `b`.
+    * `op_div`: Returns the division of `a` by `b`.
+    * `op_mod`: Returns the remainder of the division of `a` by `b`.
