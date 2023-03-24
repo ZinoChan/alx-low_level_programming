@@ -42,3 +42,22 @@ types and function written for the program [3-main.c](./3-main.c).
     * `op_mul`: Returns the product of `a` and `b`.
     * `op_div`: Returns the division of `a` by `b`.
     * `op_mod`: Returns the remainder of the division of `a` by `b`.
+ * [3-get_op_func.c](./3-get_op_func.c): C function that selects the correct function
+  from `3-op_functions.c` to perform the operation asked by the user.
+    * If the operator argument `s` does not match any of the five expected operators
+    (`+`, `-`, `*`, `/`, `%`), the function returns `NULL`.
+
+  * [3-main.c](./3-main.c): C program that performs simple mathematical operations.
+    * Prints the result of the operation, followed by a new line.
+    * Usage `./a.out num1 operator num2`
+    * The program assumes `num1` and `num2` are integers that can be converted from string
+    input to `int` using `atoi`.
+    * The program assumes that the result of all operations can be stored in an `int`.
+    * `operator` is one of either `+` (addition), `-` (subtraction), `*`
+    (multiplication), `/` (division), or `%` (modulo).
+    * If the number of arguments is incorrect, the program prints `Error` followed by a new
+    line and exits with a status value of `98`.
+    * If the `operator` is none of the above, the program prints `Error` followed by
+    a new line and exits with a status value of `99`.
+    * If the user tries to divide (`/` or `%`) by `0`, the program prints
+    `Error` followed by a new line and exits with a status value of `100`.
