@@ -24,4 +24,4 @@
 | [`0x0F. C - Function pointers`](./0x0F-function_pointers)                                            |  function pointers                                                                                                                                                 |
 | [`0x10. C - Variadic functions`](./0x10-variadic_functions)                                            | variadic functions, va_start, va_arg and va_end macros, const type qualifier 
 | [`0x12. C - Singly linked lists`](./0x12-singly_linked_lists)                                            |  linked lists vs arrays
- |
+ 
