@@ -7,7 +7,7 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *tmp;
+	const listint_t *curr;
 	size_t ans = 0;
 
 	if (head != NULL)
@@ -16,14 +16,14 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			printf("[%p] %d\n", (void *)head, head->n);
 			ans++;
-			tmp = head;
-			head = head->next;
+			curr = head->next;
 
-			if (tmp <= head->next)
+			if (curr >= head)
 			{
-				printf("-> [%p] %d\n", (void *)head, head->n);
+				printf("-> [%p] %d\n", (void *)curr, curr->n);
 				exit(98);
 			}
+			head = curr;
 		}
 	}
 
