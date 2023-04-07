@@ -22,6 +22,7 @@ unsigned int binary_to_uint(const char *b)
 			bango = bango * 2 + 1;
 		else
 			return (0);
+		hajimeru++;
 	}
 
 	return (bango);
