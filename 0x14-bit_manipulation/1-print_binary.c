@@ -13,6 +13,17 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
+	recursive_print(n);
+}
+
+/**
+ * recursive_print - prints binary of number
+ * @n: number to convert
+ * Return: binary of a number
+*/
+
+void recursive_print(unsigned long int n)
+{
 	if (n < 1)
 		return;
 	print_binary(n >> 1);
