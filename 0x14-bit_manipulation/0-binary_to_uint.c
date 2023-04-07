@@ -9,18 +9,19 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int bango = 0;
-	int hajimeru = 0;
+	int hajimeru = 0, l = 0;
 
 	if (b == NULL)
 		return (0);
+	
+	while (b[l])
+		l++;
 
-	while (b[hajimeru] != '\0')
+	while (l--)
 	{
-		if (b[hajimeru] == '0')
-			bango = bango * 2;
-		else if (b[hajimeru] == '1')
-			bango = bango * 2 + 1;
-		else
+		if (b[l] == '1')
+			bango += (1 << hajimeru);
+		else if (b[l] != '0')
 			return (0);
 		hajimeru++;
 	}
