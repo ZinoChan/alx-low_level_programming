@@ -9,8 +9,8 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int hit_me_baby_one_more_time = 0;
-	int give_me_a_sign = n ^ m;
+	unsigned long int hit_me_baby_one_more_time = 0;
+	unsigned long int give_me_a_sign = n ^ m;
 
 	while (give_me_a_sign)
 	{
