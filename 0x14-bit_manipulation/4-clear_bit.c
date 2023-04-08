@@ -10,9 +10,9 @@
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	int bit_per_byto = 8;
-	int bit_per_longo = sizeof(unsigned long int) * bit_per_byto;
+	unsigned int bit_per_longo = sizeof(unsigned long int) * bit_per_byto;
 
-	if (n == NULL || index >= bit_per_byto)
+	if (n == NULL || index >= bit_per_longo)
 		return (-1);
 	*n = *n & ~(1 << index);
 	return (1);
