@@ -87,9 +87,7 @@ The -m32 flag tells the compiler to generate code for a 32-bit architecture, whi
 The target architecture affects the size of the data types, the size of the memory address space, and the way that the CPU executes instructions. Programs compiled with the -m32 flag will use 32-bit pointers, which limits the amount of memory that the program can access, whereas programs compiled with the -m64 flag can use 64-bit pointers, which allows them to access a larger amount of memory.
 
 ### Last digit of an integer
-
-when a number is divided by 10 will always be the last digit of the number.
-so number % 10 will give the last digit of a number.
+when a number is divided by 10, the remainder of the division will always be the last digit of the number. So, number % 10 will give the last digit of a number.
 
 ### Double & single quotes
 
