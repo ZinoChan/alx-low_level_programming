@@ -1,6 +1,8 @@
 # Low-level programming & Algorithm :robot:
 
-### [Notes](./notes) :notebook:
+## [Notes](./notes) :notebook:
+[`0x00. C Hello, World`](./notes/0x00-hello_world.md)
+[`0x01. C - Variables, if, else, while`](./notes/0x01-C_Variables_if_else_while.md)
 
 ## Projects :rocket:
 
