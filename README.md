@@ -5,6 +5,8 @@
 
 [0x01. C - Variables, if, else, while](./notes/0x01-C_Variables_if_else_while.md)
 
+[0x02. C - Functions, nested loops](./notes/0x02-functions_nested_loops.md)
+
 ## Projects :rocket:
 
 | Project name                                                                         | Description                                                                                                                                                        |
