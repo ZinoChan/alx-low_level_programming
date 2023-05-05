@@ -7,6 +7,8 @@
 
 [0x02. C - Functions, nested loops](./notes/0x02-functions_nested_loops.md)
 
+[`0x05. C - Pointers, arrays and strings`](./notes/0x05-pointers_arrays_strings.md)
+
 ## Projects :rocket:
 
 | Project name                                                                         | Description                                                                                                                                                        |
