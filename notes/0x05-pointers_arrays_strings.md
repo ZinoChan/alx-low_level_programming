@@ -56,4 +56,4 @@ You can declare a string as a character array or as a character pointer. To init
 char str1[] = "Hello, world!";
 char *str2 = "Hello, world!";
 ```
-**when working with strings in C, you should always ensure that there is enough space for the null character ('\0') at the end of the string. When using functions from string.h, make sure the destination buffer is large enough to hold the result to avoid buffer overflow issues.
+**when working with strings in C, you should always ensure that there is enough space for the null character ('\0') at the end of the string. When using functions from string.h, make sure the destination buffer is large enough to hold the result to avoid buffer overflow issues.**
