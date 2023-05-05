@@ -46,3 +46,14 @@ letters[2] = 'z'; // Changes the third element of the 'letters' array to 'z'
 ```
 3. Passing to functions:
 When you pass an array to a function, it is passed as a pointer to the first element. The function cannot determine the size of the array, so you must pass the size as a separate argument.
+
+## Strings
+In C, strings are sequences of characters terminated by a null character ('\0'). Strings are usually represented as arrays of characters or character pointers.
+
+1. Declaration and initialization:
+You can declare a string as a character array or as a character pointer. To initialize a string, use double quotes.
+```
+char str1[] = "Hello, world!";
+char *str2 = "Hello, world!";
+```
+**when working with strings in C, you should always ensure that there is enough space for the null character ('\0') at the end of the string. When using functions from string.h, make sure the destination buffer is large enough to hold the result to avoid buffer overflow issues.
