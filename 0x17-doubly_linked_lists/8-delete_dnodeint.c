@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * delete_dnodeint_at_index - delte a node at index
+ * @head: Pointer to pointer to the head of the list
+ * @index: index of node
+ * Return: -1 or 1
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	unsigned int count = 0;
@@ -18,7 +24,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	}
 
-	while(curr != NULL && count < index)
+	while (curr != NULL && count < index)
 	{
 		curr = curr->next;
 		count++;
